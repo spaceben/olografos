@@ -1,0 +1,19 @@
+{
+  "name": "olografos",
+  "version": "0.0.1",
+  "description": "An utility to turn numbers into their literal representation",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ikmertz/olografos.git"
+  },
+  "keywords": [
+    "greek"
+  ],
+  "author": "Ioannis Mertzanis",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/ikmertz/olografos#readme"
+}
