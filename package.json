@@ -1,6 +1,6 @@
 {
   "name": "olografos",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An utility to turn numbers into their literal representation",
   "main": "index.js",
   "scripts": {

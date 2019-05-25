@@ -2,7 +2,7 @@ const data = require('./data')
 
 module.exports = function translateNumberToGreek (num) {
   num = num.toString()
-  if (num.length >= 3 && num.length < 7) {
+  if (num.length >= 4 && num.length < 7) {
     let fourDigitString
     if (num.length === 4 && num[0] === '1') {
       fourDigitString = 'χίλια'
@@ -18,7 +18,7 @@ module.exports = function translateNumberToGreek (num) {
     return `${fourDigitString} ${data.tripleDigit[parseInt(threeDigitNumber.slice(0,1))]} ${data.singleOrDoubleDigit[parseInt(threeDigitNumber.slice(1, 3))]}`
   }
   else if (num.length === 3) {
-    return `${data.tripleDigit[parseInt(num.split('').slice(0,1))]} ${data.singleOrDoubleDigit[parseInt(num.slice(1, 3))]}`
+    return `${data.tripleDigit[parseInt(num.slice(0,1))]} ${data.singleOrDoubleDigit[parseInt(num.slice(1, 3))]}`
   } 
   else if (num.length < 3) {
     return data.singleOrDoubleDigit[parseInt(num)]
